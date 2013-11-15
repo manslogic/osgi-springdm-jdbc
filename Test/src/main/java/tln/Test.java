@@ -1,6 +1,13 @@
 package tln;
 
 import tln.able.DrugDAO;
+import tln.model.Drug;
+import com.apple.laf.*;
+
+import javax.swing.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,7 +24,8 @@ public class Test {
     }
 
     public void start(){
-        drugDAO.getByDrugCode("abc");
+        Drug drug = drugDAO.getByDrugCode("1");
+        System.out.println(drug.getDrugName());
     }
 
     public void stop(){

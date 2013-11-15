@@ -1,8 +1,10 @@
 package tln.impl;
 
 import tln.able.DrugDAO;
+import tln.connection.DrugConnection;
 import tln.model.Drug;
 
+import java.sql.*;
 import java.util.Collection;
 import java.util.Set;
 
@@ -14,10 +16,36 @@ import java.util.Set;
  * To change this template use File | Settings | File Templates.
  */
 public class JDBCDrugDAO implements DrugDAO {
-    @Override
+
+    private Statement statement;
+    private PreparedStatement preparedStatement;
+    private ResultSet resultSet;
+    private Connection connection;
+
+    public JDBCDrugDAO() {
+        try {
+            connection = DrugConnection.connection;
+            statement = connection.createStatement();
+        } catch (SQLException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+    }
+
     public Drug getByDrugCode(String drugCode) {
-        System.out.println("ok ok ok");
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        Drug drug = null;
+        try {
+            preparedStatement = connection.prepareStatement("SELECT * FROM DRUG WHERE DRUG.DrugCode = ?");
+            // resultSet = statement.executeQuery("select * from DRUG where DrugCode='1'");
+            preparedStatement.setString(1, drugCode);
+            resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()){
+                drug = new Drug();
+                drug.setDrugName(resultSet.getString("DrugName"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+        return drug;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override

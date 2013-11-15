@@ -4,15 +4,18 @@
     <list default="true" id="122d15e7-6093-491c-a63e-f3f40dd3425b" name="Default" comment="" />
     <ignored path="DAO.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/pom.xml" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384484283718" ignored="false" />
+    <file path="/pom.xml" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384506225187" ignored="false" />
     <file path="/DrugDAO.java" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384481630228" ignored="false" />
     <file path="/DrugGroupDAO.java" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384481717826" ignored="false" />
-    <file path="/JDBCDrugDAO.java" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384482273713" ignored="false" />
+    <file path="/JDBCDrugDAO.java" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384496360677" ignored="false" />
     <file path="/JDBCDrugGroupDAO.java" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384482095783" ignored="false" />
     <file path="/dao-context.xml" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384482246974" ignored="false" />
-    <file path="/Test.java" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384482683444" ignored="false" />
+    <file path="/Test.java" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384506468636" ignored="false" />
     <file path="/test-context.xml" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384482778785" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/DAO/DAO/1.0-SNAPSHOT/DAO-1.0-SNAPSHOT.jar!/META-INF/maven/DAO/DAO/pom.xml" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384484195116" ignored="false" />
+    <file path="/DrugConnection.java" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384485525683" ignored="false" />
+    <file path="/Dummy.txt" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384485817328" ignored="false" />
+    <file path="$USER_HOME$/DrugManager/pom.xml" changelist="122d15e7-6093-491c-a63e-f3f40dd3425b" time="1384485969476" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +79,10 @@
       <file leaf-file-name="Test.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../Test/src/main/java/tln/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="37" selection-start="385" selection-end="385" vertical-scroll-proportion="0.32460135">
-              <folding />
+            <state line="25" column="24" selection-start="510" selection-end="510" vertical-scroll-proportion="0.42710707">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,7 +99,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
+            <state line="11" column="18" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +108,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Test/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="31" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+            <state line="37" column="71" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,7 +117,16 @@
       <file leaf-file-name="JDBCDrugDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tln/impl/JDBCDrugDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="36" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+            <state line="35" column="13" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrugConnection.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tln/connection/DrugConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="31" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,11 +158,12 @@
         <option value="$PROJECT_DIR$/src/main/java/tln/model/DrugGroup.java" />
         <option value="$PROJECT_DIR$/src/main/java/tln/impl/JDBCDrugGroupDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/dao-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/tln/impl/JDBCDrugDAO.java" />
-        <option value="$PROJECT_DIR$/../Test/src/main/java/tln/Test.java" />
         <option value="$PROJECT_DIR$/../Test/src/main/resources/META-INF/spring/test-context.xml" />
-        <option value="$PROJECT_DIR$/../Test/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/tln/connection/DrugConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tln/impl/JDBCDrugDAO.java" />
+        <option value="$PROJECT_DIR$/../Test/pom.xml" />
+        <option value="$PROJECT_DIR$/../Test/src/main/java/tln/Test.java" />
       </list>
     </option>
   </component>
@@ -235,6 +250,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -455,30 +472,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="connection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tln" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="able" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="MavenSettings" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/struts" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -598,6 +644,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="122d15e7-6093-491c-a63e-f3f40dd3425b" name="Default" comment="" />
@@ -620,7 +683,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15483476" sideWeight="0.670354" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1621787" sideWeight="0.670354" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18849449" sideWeight="0.670354" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -663,7 +726,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
@@ -692,6 +755,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/dao-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="70" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tln/able/GenericDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="1" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.88013697">
@@ -755,6 +825,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../Test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="71" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/dao-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="70" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
@@ -762,31 +839,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tln/connection/DrugConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
+        <state line="22" column="31" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tln/impl/JDBCDrugDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+        <state line="35" column="13" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Test/pom.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="31" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+        <state line="11" column="18" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Test/src/main/java/tln/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="37" selection-start="385" selection-end="385" vertical-scroll-proportion="0.32460135">
-          <folding />
+        <state line="25" column="24" selection-start="510" selection-end="510" vertical-scroll-proportion="0.42710707">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
