@@ -16,22 +16,14 @@ public interface GenericDAO<T> {
      * @param object the object instance.
      * @return the generated identifier.
      */
-    String save(T object);
+    T save(T object);
 
     /**
      * Updates the given object instance.
      *
      * @param object the object instance.
      */
-    void update(T object);
-
-    /**
-     * Saves or updates the given object instance depending on the object's
-     * persistent state.
-     *
-     * @param object the object instance.
-     */
-    void saveOrUpdate(T object);
+    T update(T object);
 
     /**
      * Retrieves the object with the given identifier. This method will first

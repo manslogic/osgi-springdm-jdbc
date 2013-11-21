@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1384506291618
+Bnd-LastModified: 1385008958399
 Build-Jdk: 1.7.0_45
 Built-By: tmtxt
 Bundle-ManifestVersion: 2
@@ -9,6 +9,5 @@ Bundle-Vendor: Truong Linh Nhan
 Bundle-Version: 1.0.0.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
 Export-Package: tln;version="1.0.0.SNAPSHOT";uses:="tln.able"
-Import-Package: javax.swing,tln.able;version="[1.0,2)",tln.model;version
- ="[1.0,2)"
+Import-Package: tln.able;version="[1.0,2)",tln.model;version="[1.0,2)"
 Tool: Bnd-2.1.0.20130426-122213

@@ -24,18 +24,14 @@ public class JDBCDrugGroupDAO implements DrugGroupDAO {
     }
 
     @Override
-    public String save(DrugGroup object) {
+    public DrugGroup save(DrugGroup object) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public void update(DrugGroup object) {
+    public DrugGroup update(DrugGroup object) {
         //To change body of implemented methods use File | Settings | File Templates.
-    }
-
-    @Override
-    public void saveOrUpdate(DrugGroup object) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        return null;
     }
 
     @Override

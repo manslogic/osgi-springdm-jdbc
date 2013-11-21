@@ -2,6 +2,7 @@ package tln.able;
 
 import tln.model.Drug;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Set;
  */
 public interface DrugDAO extends GenericDAO<Drug> {
     Drug getByDrugCode(String drugCode);
-    Drug getByDrugName(String drugName);
+    List<Drug> getByDrugName(String drugName);
     Drug getByGenericName(String genericName);
-    Set getByDrugGroupID(String drugGroupID);
+    List<Drug> getByDrugGroupID(String drugGroupID);
 }
