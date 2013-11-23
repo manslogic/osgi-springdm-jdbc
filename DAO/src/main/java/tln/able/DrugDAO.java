@@ -13,7 +13,7 @@ import java.util.Set;
  * To change this template use File | Settings | File Templates.
  */
 public interface DrugDAO extends GenericDAO<Drug> {
-    Drug getByDrugCode(String drugCode);
+
     List<Drug> getByDrugName(String drugName);
     Drug getByGenericName(String genericName);
     List<Drug> getByDrugGroupID(String drugGroupID);

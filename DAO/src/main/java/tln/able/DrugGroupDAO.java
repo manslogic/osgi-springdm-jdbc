@@ -10,6 +10,6 @@ import tln.model.DrugGroup;
  * To change this template use File | Settings | File Templates.
  */
 public interface DrugGroupDAO extends GenericDAO<DrugGroup> {
-    DrugGroup getByDrugGroupID(String drugGroupID);
+
     DrugGroup getByDrugGroupName(String drugGroupName);
 }

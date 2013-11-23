@@ -13,10 +13,6 @@ import java.util.Collection;
  * To change this template use File | Settings | File Templates.
  */
 public class JDBCDrugGroupDAO implements DrugGroupDAO {
-    @Override
-    public DrugGroup getByDrugGroupID(String drugGroupID) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
 
     @Override
     public DrugGroup getByDrugGroupName(String drugGroupName) {
@@ -35,12 +31,7 @@ public class JDBCDrugGroupDAO implements DrugGroupDAO {
     }
 
     @Override
-    public DrugGroup get(int id) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
-
-    @Override
-    public DrugGroup load(int id) {
+    public DrugGroup get(String id) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 

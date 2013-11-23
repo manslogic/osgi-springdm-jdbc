@@ -7,6 +7,7 @@ import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -33,9 +34,9 @@ public class Test {
             System.out.println("----------");
             System.out.println();
 
-            System.out.println("getByDrugCode() function");
+            System.out.println("get() function");
             System.out.println("Getting Drug with Drug Code 1...");
-            Drug drug = drugDAO.getByDrugCode("1");
+            Drug drug = drugDAO.get("1");
             Thread.sleep(500);
             if(drug == null){
                 System.out.println("No result");
@@ -137,6 +138,20 @@ public class Test {
             }
             System.out.println();
 
+            System.out.println("getAll() function");
+            System.out.println("Getting all Drug");
+            Collection<Drug> list1 = drugDAO.getAll();
+            Thread.sleep(500);
+            System.out.println("Total number: " + list1.size());
+            System.out.println();
+
+            System.out.println("delete() function");
+            System.out.println("Delete Drug with code 7");
+            Drug drug1 = new Drug();
+            drug1.setDrugCode("7");
+            Thread.sleep(500);
+            drugDAO.delete(drug1);
+            System.out.println();
 
         } catch (InterruptedException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.

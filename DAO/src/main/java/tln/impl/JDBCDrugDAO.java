@@ -180,22 +180,63 @@ public class JDBCDrugDAO implements DrugDAO {
     }
 
     @Override
-    public Drug get(int id) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
+    public Drug get(String id) {
+        Drug drug = null;
+        try {
+            preparedStatement = connection.prepareStatement("SELECT * FROM DRUG WHERE DRUG.DrugCode = ?");
+            preparedStatement.setString(1, id);
+            resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()){
+                drug = new Drug();
+                drug.setDrugCode(resultSet.getString("DrugCode"));
+                drug.setDrugName(resultSet.getString("DrugName"));
+                drug.setGenericName(resultSet.getString("GenericName"));
+                drug.setDose(resultSet.getString("Dose"));
+                drug.setUsage(resultSet.getString("UsageInfo"));
+                drug.setRoute(resultSet.getString("Route"));
+                drug.setDrugGroupID(resultSet.getString("DrugGroupID"));
+            }
+        } catch (SQLException e) {
 
-    @Override
-    public Drug load(int id) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        }
+        return drug;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public Collection<Drug> getAll() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        List<Drug> list = new ArrayList<Drug>();
+
+        try {
+            preparedStatement = connection.prepareStatement("SELECT * FROM DRUG");
+            resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()){
+                Drug drug = new Drug();
+                drug.setDrugCode(resultSet.getString("DrugCode"));
+                drug.setDrugName(resultSet.getString("DrugName"));
+                drug.setGenericName(resultSet.getString("GenericName"));
+                drug.setDose(resultSet.getString("Dose"));
+                drug.setUsage(resultSet.getString("UsageInfo"));
+                drug.setRoute(resultSet.getString("Route"));
+                drug.setDrugGroupID(resultSet.getString("DrugGroupID"));
+                list.add(drug);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+
+        return list;
     }
 
     @Override
     public void delete(Drug object) {
         //To change body of implemented methods use File | Settings | File Templates.
+        try {
+            preparedStatement = connection.prepareStatement("DELETE FROM DRUG WHERE DRUG.DrugCode = ?");
+            preparedStatement.setString(1, object.getDrugCode());
+            preparedStatement.execute();
+            System.out.println("Delete success");
+        } catch (SQLException e) {
+            System.out.println("Error");
+        }
     }
 }

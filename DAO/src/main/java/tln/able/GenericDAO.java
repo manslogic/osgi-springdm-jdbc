@@ -32,15 +32,7 @@ public interface GenericDAO<T> {
      * @param id the object identifier.
      * @return the object identified by the given identifier.
      */
-    T get(int id);
-
-    /**
-     * Retrieves the object with the given identifier, assuming it exists.
-     *
-     * @param id the object identifier.
-     * @return the object identified by the given identifier or a generated proxy.
-     */
-    T load(int id);
+    T get(String id);
 
     /**
      * Retrieves a Collection of all objects.
