@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Drug</groupId>
-    <artifactId>Drug</artifactId>
+    <groupId>DrugGroup</groupId>
+    <artifactId>DrugGroup</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
@@ -35,12 +35,13 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-SymbolicName>Drug</Bundle-SymbolicName>
+                        <Bundle-SymbolicName>DrugGroup</Bundle-SymbolicName>
                         <Bundle-Vendor>Truong Linh Nhan</Bundle-Vendor>
                     </instructions>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
     
 </project>

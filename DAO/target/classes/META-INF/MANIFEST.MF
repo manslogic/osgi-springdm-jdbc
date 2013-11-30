@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1385175086998
+Bnd-LastModified: 1385603494254
 Build-Jdk: 1.7.0_45
 Built-By: tmtxt
 Bundle-ManifestVersion: 2
